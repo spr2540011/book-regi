@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/list",(req,res)=>{
-    const filePath="./book.json";
+    const filePath="./books.json";
 
     try{
         if(fs.existsSync(filePath)){
